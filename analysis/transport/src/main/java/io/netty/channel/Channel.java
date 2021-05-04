@@ -74,6 +74,7 @@ import java.net.SocketAddress;
  * resources once you are done with the {@link Channel}. This ensures all resources are
  * released in a proper way, i.e. filehandles.
  */
+// todo mark 重要的类
 public interface Channel extends AttributeMap, ChannelOutboundInvoker, Comparable<Channel> {
 
     /**
@@ -158,6 +159,7 @@ public interface Channel extends AttributeMap, ChannelOutboundInvoker, Comparabl
      * this method returns {@code false} are queued until the I/O thread is
      * ready to process the queued write requests.
      */
+    // todo mark 这里有
     boolean isWritable();
 
     /**
