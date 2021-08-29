@@ -24,6 +24,14 @@ import java.io.Closeable;
 /**
  * Allows to acquire and release {@link Channel} and so act as a pool of these.
  */
+// todo mark
+/**
+顾名思义，就是一个管理Channel的容器，其中包含了从容器里获取Channel、将使用中的Channel放回容器，以及关闭容器等操作
+
+通过ChannelPool来解决与多个服务端交互及与单个服务端建立多个连接的问题。
+
+
+ */
 public interface ChannelPool extends Closeable {
 
     /**

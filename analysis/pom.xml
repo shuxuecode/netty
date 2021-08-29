@@ -1607,4 +1607,24 @@
       </plugins>
     </pluginManagement>
   </build>
+
+
+  <!-- 手动设置仓库 -->
+  <repositories>
+      <repository>
+          <id>aliyun-maven</id>
+          <name>aliyun-maven</name>
+          <url>https://maven.aliyun.com/repository/public</url>
+          <layout>default</layout>
+          <releases>
+              <enabled>true</enabled>
+              <updatePolicy>always</updatePolicy>
+          </releases>
+          <snapshots>
+              <!-- <enabled>false</enabled> -->
+              <enabled>true</enabled>
+              <updatePolicy>always</updatePolicy>
+          </snapshots>
+      </repository>
+  </repositories>
 </project>

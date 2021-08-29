@@ -22,6 +22,7 @@ import io.netty.util.concurrent.Promise;
 /**
  * Handler which is called for various actions done by the {@link ChannelPool}.
  */
+// todo mark
 public interface ChannelPoolHandler {
     /**
      * Called once a {@link Channel} was released by calling {@link ChannelPool#release(Channel)} or

@@ -1043,6 +1043,7 @@ public final class PlatformDependent {
      */
     @SuppressJava6Requirement(reason = "Usage guarded by java version check")
     public static <C> Deque<C> newConcurrentDeque() {
+        // todo mark 增加版本判断
         if (javaVersion() < 7) {
             return new LinkedBlockingDeque<C>();
         } else {
